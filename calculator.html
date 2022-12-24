@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .head {
+      display: flex;
+      width: 400px;
+      box-shadow: 1px 2px 3px -1px rgba(0, 0, 0, 0.3);
+      height: auto;
+      flex-direction: column;
+      padding: 20px;
+      margin: auto;
+    }
+    .input-box {
+      display: flex;
+      flex-direction: column;
+    }
+    .input {
+      margin: 5px;
+      border-radius: 4px;
+      border: none;
+      background: wheat;
+      padding: 8px;
+    }
+    .buttons {
+      margin: 5px;
+      display: flex;
+    }
+    button {
+      flex: 1;
+      margin: 2px;
+      font-size: 15px;
+      color: white;
+      background-color: blueviolet;
+      border-radius: 4px;
+      border: none;
+      padding: 6px;
+      cursor: pointer;
+    }
+    .heading {
+      text-align: center;
+      margin-bottom: 3px;
+      color: cadetblue;
+      font-weight: 600;
+      font-size: 25px;
+    }
+    .result {
+      margin: 3px;
+      color: brown;
+    }
+  </style>
+  <body>
+    <div class="head">
+      <div class="heading">Simple Calculator</div>
+      <div class="input-box">
+        <input
+          type="number"
+          class="input"
+          id="number1"
+          placeholder="Enter first number"
+        />
+        <input
+          type="number"
+          class="input"
+          id="number2"
+          placeholder="Enter second number"
+        />
+      </div>
+      <div class="result" id="result">Result : <span id="res">23</span></div>
+      <div class="buttons">
+        <button onclick="add()">Add</button>
+        <button onclick="sub()">Sub</button>
+        <button onclick="mul()">Mul</button>
+        <button onclick="div()">Divide</button>
+      </div>
+    </div>
+  </body>
+  <script src="calculator.js"></script>
+</html>
